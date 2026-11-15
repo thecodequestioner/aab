@@ -1,0 +1,20 @@
+{
+  "method": "custom",
+  "dataset": "population-central-south-asia",
+  "indicator": "SP.POP.TOTL",
+  "unit": "percent",
+  "first_year": 2000,
+  "last_year": 2025,
+  "n_countries": 13,
+  "countries_grew": 13,
+  "all_grew": true,
+  "largest_rise": {
+    "country": "Afghanistan",
+    "change_percent": 117.80128559262847
+  },
+  "smallest_change": {
+    "country": "Sri Lanka",
+    "change_percent": 12.765972665602865
+  },
+  "median_average_yearly_percent": 1.62
+}

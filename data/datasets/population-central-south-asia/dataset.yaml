@@ -1,0 +1,24 @@
+# Dataset configuration. Read docs/guide.md for every field.
+id: population-central-south-asia   # must equal the folder name
+title: Total population in Central and South Asia, 2000-2025
+description: Total population of 13 countries in Central and South Asia, 2000 to 2025, from the World Bank World Development Indicators, based on UN World Population Prospects 2024.
+version: 0.1.0                      # semantic versioning: minor for new rows
+status: published                       # draft | published
+themes: [population]                # must be listed in project.yaml
+tags: [population, demography, central-asia, south-asia]
+
+inputs:
+  sources: [wdi-population]         # ids of folders in data/sources/
+
+coverage:
+  countries: central_and_south_asia # country group from aab/countries.csv
+  years:
+    start: 2000
+    end: 2025
+
+indicators:
+  - code: SP.POP.TOTL
+    name: Total population (people)
+    unit: people
+    decimals: 0
+    source: wdi-population

@@ -1,0 +1,18 @@
+{
+  "method": "custom",
+  "dataset": "population-central-south-asia",
+  "indicator": "SP.POP.TOTL",
+  "unit": "people",
+  "year": 2025,
+  "n_countries": 13,
+  "largest": {
+    "country": "India",
+    "population": 1463865525
+  },
+  "smallest": {
+    "country": "Maldives",
+    "population": 529676
+  },
+  "total_population": 2074962392,
+  "largest_share_percent": 70.5
+}

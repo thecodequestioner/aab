@@ -1,0 +1,136 @@
+{
+  "name": "drinking-water-access",
+  "title": "Drinking water access in Central and South Asia, 2000-2024",
+  "description": "National estimates of safely managed and basic drinking water services for 13 countries in Central and South Asia, from the WHO/UNICEF Joint Monitoring Programme.",
+  "version": "0.1.0",
+  "keywords": [
+    "water",
+    "drinking-water",
+    "sdg-6",
+    "wash",
+    "central-asia",
+    "south-asia"
+  ],
+  "contributors": [
+    {
+      "title": "The{code}questioner",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "WHO/UNICEF Joint Monitoring Programme (JMP): household estimates of water, sanitation and hygiene, 2025 update",
+      "path": "https://washdata.org/"
+    }
+  ],
+  "resources": [
+    {
+      "name": "drinking-water-access",
+      "title": "Drinking water access in Central and South Asia, 2000-2024",
+      "path": "drinking-water-access.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "title": "ISO 3166-1 alpha-3 country code",
+            "description": "Three-letter country code. Matches the project registry in aab/countries.csv.",
+            "constraints": {
+              "required": true,
+              "pattern": "^[A-Z]{3}$"
+            }
+          },
+          {
+            "name": "country_name",
+            "type": "string",
+            "title": "Country name",
+            "description": "Short English country name from the project registry.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "title": "Sub-region",
+            "description": "Project sub-region: Central Asia or South Asia.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "title": "Reference year",
+            "description": "Calendar year the value refers to.",
+            "constraints": {
+              "required": true,
+              "minimum": 1900,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "indicator_code",
+            "type": "string",
+            "title": "Indicator code",
+            "description": "Code of the indicator as published by the source, or a project code where the source has none.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "indicator_name",
+            "type": "string",
+            "title": "Indicator name",
+            "description": "Plain-language name of the indicator.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "title": "Observed value",
+            "description": "Value in the unit given in the unit column. Missing values are not stored as rows.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "title": "Unit of measure",
+            "description": "Unit of the value, for example 'percent of population' or 'mm per year'.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "attribution",
+            "type": "string",
+            "title": "Attribution",
+            "description": "How to credit the source of this row. Source details are in the source's source.yaml.",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "iso3",
+          "year",
+          "indicator_code"
+        ]
+      }
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}

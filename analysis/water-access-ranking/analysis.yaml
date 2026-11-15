@@ -1,0 +1,15 @@
+# Analysis configuration. Read docs/guide.md for the methods and fields.
+id: water-access-ranking            # must equal the folder name
+title: Drinking water access ranking, latest year
+question: How do countries in Central and South Asia compare on the share of their population using safely managed drinking water?
+version: 0.1.0
+status: published
+themes: [water-access]
+
+inputs:
+  datasets: [drinking-water-access] # every dataset this analysis reads
+
+method: ranking                     # ranking | trend | custom
+parameters:
+  dataset: drinking-water-access
+  indicator: SH.H2O.SMDW.ZS

@@ -1,0 +1,18 @@
+# Copy this folder with: python -m aab new infographic SLUG
+id: TEMPLATE_ID
+title: The title states the question
+question: The question the infographic answers
+headline: One sentence that gives the answer, in plain words
+claim: trend_found                  # no_clear_trend | trend_found; make.py checks this
+version: 0.1.0
+status: draft
+themes: [water-access]
+audience:
+  - Who the infographic is for
+languages: [en]
+alt_text: >-
+  Describe the picture in plain words, including the finding. At least 12 words.
+
+inputs:
+  analyses: [ANALYSIS_ID]
+  datasets: []

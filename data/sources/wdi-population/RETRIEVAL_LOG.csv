@@ -1,0 +1,2 @@
+retrieved_utc,file,source_url,sha256,bytes,note
+2026-10-29T21:34:21Z,worldbank_SP.POP.TOTL.json,https://api.worldbank.org/v2/country/KAZ;KGZ;TJK;TKM;UZB;AFG;BGD;BTN;IND;MDV;NPL;PAK;LKA/indicator/SP.POP.TOTL?format=json&per_page=20000&date=2000:2030,551d628813570efb2cb46ca5862a20e66aedf847a180a459c374a3239c7fcdeb,66997,

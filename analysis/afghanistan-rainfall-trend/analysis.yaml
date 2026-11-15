@@ -1,0 +1,14 @@
+id: afghanistan-rainfall-trend
+title: Annual precipitation in Afghanistan, 1901-2025, trend
+question: How has annual precipitation in Afghanistan changed from 1901 to 2025?
+version: 0.1.0
+status: draft
+themes: [climate]
+
+inputs:
+  datasets: [afghanistan-precipitation]
+
+method: trend
+parameters:
+  dataset: afghanistan-precipitation
+  indicator: PR_ANNUAL_MM

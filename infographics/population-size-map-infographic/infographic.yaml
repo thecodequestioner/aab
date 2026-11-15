@@ -1,0 +1,22 @@
+# Infographic configuration. Read docs/guide.md for the fields.
+id: population-size-map-infographic      # must equal the folder name
+title: How many people live in each country of Central and South Asia?
+question: How many people live in each of the 13 countries of Central and South Asia?
+headline: India, Pakistan and Bangladesh each have more than 100 million people. Bhutan and the Maldives each have under 1 million.
+version: 0.1.0
+status: published
+themes: [population]                     # must be listed in project.yaml
+audience:
+  - Teachers
+  - Students (secondary school)
+  - General public
+languages: [en]
+alt_text: >-
+  Map of 13 countries in Central and South Asia, shaded from dark to light by 2025 population.
+  India, Pakistan and Bangladesh are darkest, with more than 100 million people each. Bhutan and
+  the Maldives are lightest, with under 1 million each. A side panel lists each country's population.
+  The Maldives is shown by a marker, not its island shape.
+
+inputs:
+  analyses: [population-ranking-2025]    # the analysis whose finding this map shows
+  datasets: [population-central-south-asia]

@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+
+# IDE and operating system
+.idea/
+.DS_Store
+Thumbs.db
+
+# Packaging output
+build/
+dist/
+*.egg-info/
+
+# Local secrets
+.env

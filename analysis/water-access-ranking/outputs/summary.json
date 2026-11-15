@@ -1,0 +1,25 @@
+{
+  "method": "ranking",
+  "dataset": "drinking-water-access",
+  "indicator": "SH.H2O.SMDW.ZS",
+  "unit": "percent of population",
+  "n_countries": 12,
+  "highest": {
+    "country": "Turkmenistan",
+    "value": 94.8,
+    "year": 2024
+  },
+  "lowest": {
+    "country": "Nepal",
+    "value": 16.5,
+    "year": 2024
+  },
+  "gap_points": 78.4,
+  "subregion_means": {
+    "Central Asia": 81.5,
+    "South Asia": 48.6
+  },
+  "without_value": [
+    "Maldives"
+  ]
+}

@@ -1,0 +1,22 @@
+id: afghanistan-rainfall-trend
+title: Has Afghanistan's rainfall changed over time?
+question: How has annual precipitation in Afghanistan changed from 1901 to 2025?
+headline: The full record suggests a slight upward trend; data quality varies over time.
+claim: trend_found
+version: 0.1.0
+status: draft
+themes: [climate]
+audience:
+  - Teachers
+  - Students who can read a line chart and a bar chart
+languages: [en]
+alt_text: >-
+  Column chart of annual country-average precipitation in Afghanistan from 1901 to 2025, with a 10-year
+  rolling mean and full-period trend line. Sen's slope is about 2.55 millimetres per decade and the
+  conventional Mann-Kendall test gives p = 0.020. The wettest year is 1957 at about 444 millimetres and
+  the driest is 1917 at about 198 millimetres. Early-record data quality varies, and the test does not
+  adjust for serial correlation, so the statistical result is exploratory.
+
+inputs:
+  analyses: [afghanistan-rainfall-trend]
+  datasets: [afghanistan-precipitation]

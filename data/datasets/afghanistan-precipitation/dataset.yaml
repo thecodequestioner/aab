@@ -1,0 +1,26 @@
+# Dataset configuration. Read docs/guide.md for every field.
+id: afghanistan-precipitation
+title: Annual precipitation in Afghanistan, 1901-2025
+description: Country-average annual precipitation for Afghanistan from the CCKP CRU TS 4.10 historical series, 1901-2025. Reuse terms for this exact API response remain under review.
+version: 0.1.0
+status: draft
+themes: [climate]
+tags: [climate, precipitation, rainfall, afghanistan, cru]
+
+inputs:
+  sources: [cru-ts-precipitation]
+
+coverage:
+  countries: afghanistan
+  years:
+    start: 1901
+    end: 2025
+
+indicators:
+  - code: PR_ANNUAL_MM              # a project code; the source has no indicator code
+    name: Annual precipitation, country average (mm per year)
+    unit: mm per year
+    decimals: 1
+    source: cru-ts-precipitation
+
+# This dataset is built by transform.py, because the source is a manual download.

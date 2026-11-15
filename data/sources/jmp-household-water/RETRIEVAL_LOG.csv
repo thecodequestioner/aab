@@ -1,0 +1,3 @@
+retrieved_utc,file,source_url,sha256,bytes,note
+2026-10-27T14:03:58Z,worldbank_SH.H2O.SMDW.ZS.json,https://api.worldbank.org/v2/country/KAZ;KGZ;TJK;TKM;UZB;AFG;BGD;BTN;IND;MDV;NPL;PAK;LKA/indicator/SH.H2O.SMDW.ZS?format=json&per_page=20000&date=2000:2024,e3e132ab0c61eb52832a27a6f0c16277232178ea686858e37bf1305c30586682,84645,
+2026-10-27T14:03:59Z,worldbank_SH.H2O.BASW.ZS.json,https://api.worldbank.org/v2/country/KAZ;KGZ;TJK;TKM;UZB;AFG;BGD;BTN;IND;MDV;NPL;PAK;LKA/indicator/SH.H2O.BASW.ZS?format=json&per_page=20000&date=2000:2024,e64c3b9c5b6ae7a092880caada31716b2604c022d23cd0a22eb772ad46ffbb86,84943,

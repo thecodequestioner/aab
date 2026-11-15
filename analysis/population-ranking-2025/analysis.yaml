@@ -1,0 +1,12 @@
+# Analysis configuration. Read docs/guide.md for the methods and fields.
+id: population-ranking-2025          # must equal the folder name
+title: Total population of Central and South Asian countries, 2025
+question: How do the 13 countries in Central and South Asia compare on total population in 2025?
+version: 0.1.0
+status: published
+themes: [population]                 # must be listed in project.yaml
+
+inputs:
+  datasets: [population-central-south-asia]   # every dataset this analysis reads
+
+method: custom                       # ranking | trend | custom; custom runs analysis.py

@@ -1,0 +1,20 @@
+# Copy this folder with: python -m aab new source SLUG
+id: TEMPLATE_ID
+title: Full title of the original dataset
+producer: Organisation that produced the data
+distributor: Organisation that distributes it, if different
+attribution: Short credit line shown on every row, for example "Publisher (year) via Distributor, CC BY 4.0"
+url: https://example.org/
+licence: CC-BY-4.0                    # check the source licence before adding it
+licence_note: Attribution required, or other conditions.
+access:
+  type: worldbank                     # worldbank (pipeline downloads) | manual (someone downloads by hand)
+  # For worldbank only:
+  # countries: central_and_south_asia
+  # years: {start: 2000, end: 2024}
+  # indicators:
+  #   - code: SOURCE.INDICATOR.CODE
+  #     name: Indicator name (unit)
+  # For manual only:
+  # steps: README.md
+known_issues: []

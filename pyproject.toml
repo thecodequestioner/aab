@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aab"
+version = "0.1.0"
+description = "Pipeline, validation, analyses and infographics for water data in Central and South Asia."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "The{code}questioner" }]
+dependencies = [
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# Right-to-left text for Dari and Pashto labels (see docs/accessibility.md#5-languages-and-right-to-left-text)
+rtl = ["arabic-reshaper>=3.0", "python-bidi>=0.4"]
+dev = ["pytest>=7.0", "scipy>=1.10", "frictionless>=5.0"]
+
+[tool.setuptools]
+packages = ["aab"]
+
+[tool.setuptools.package-data]
+aab = ["countries.csv", "templates/*/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

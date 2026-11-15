@@ -1,0 +1,12 @@
+# Analysis configuration. Read docs/guide.md for the methods and fields.
+id: population-growth-2000-2025      # must equal the folder name
+title: Population change in Central and South Asian countries, 2000-2025
+question: Did the population of each of the 13 countries in Central and South Asia grow between 2000 and 2025?
+version: 0.1.0
+status: published
+themes: [population]                 # must be listed in project.yaml
+
+inputs:
+  datasets: [population-central-south-asia]   # every dataset this analysis reads
+
+method: custom                       # ranking | trend | custom; custom runs analysis.py

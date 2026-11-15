@@ -1,0 +1,21 @@
+# Infographic configuration. Read docs/guide.md for the fields.
+id: population-map-infographic
+title: Where are the 13 countries of Central and South Asia?
+question: Where are the 13 countries of Central and South Asia?
+headline: The map highlights 13 countries across Central Asia and South Asia.
+version: 0.1.0
+status: published
+themes: [population]
+audience:
+  - Teachers
+  - Students (secondary school)
+  - General public
+languages: [en]
+alt_text: >-
+  Regional map of Central and South Asia highlighting 13 countries in blue and orange by sub-region.
+  Their names are listed in a side panel. A northwest callout marks the Maldives location; the marker
+  is not its border or island shape.
+
+inputs:
+  analyses: []
+  datasets: [population-central-south-asia]

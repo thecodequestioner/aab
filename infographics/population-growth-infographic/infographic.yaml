@@ -1,0 +1,22 @@
+# Infographic configuration. Read docs/guide.md for the fields.
+id: population-growth-infographic      # must equal the folder name
+title: Did the population grow in Central and South Asia?
+question: Did the population grow in each country of Central and South Asia between 2000 and 2025?
+headline: Yes. All 13 countries had more people in 2025 than in 2000.
+claim: trend_found                     # no_clear_trend | trend_found; make.py checks this against the analysis
+version: 0.1.0
+status: published
+themes: [population]
+audience:
+  - Teachers
+  - Students (secondary school)
+  - General public
+languages: [en]
+alt_text: >-
+  Horizontal bar chart of 13 countries, sorted by how much their population grew from 2000 to 2025.
+  Every country grew. Afghanistan rose most, by about 118 percent, and Sri Lanka changed least, at
+  about 13 percent. Bars are coloured and hatched by sub-region.
+
+inputs:
+  analyses: [population-growth-2000-2025]
+  datasets: [population-central-south-asia]

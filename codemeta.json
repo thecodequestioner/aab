@@ -1,0 +1,13 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "aab",
+  "description": "Pipeline, validation, analyses and infographics for water data in Central and South Asia.",
+  "version": "0.1.0",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": "Python",
+  "codeRepository": "https://github.com/thecodequestioner/aab",
+  "author": [
+    {"@type": "Person", "name": "The{code}questioner"}
+  ]
+}

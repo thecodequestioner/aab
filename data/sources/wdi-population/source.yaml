@@ -1,0 +1,19 @@
+# A source is one provider's data, kept unchanged in this folder. Datasets point to sources by id.
+id: wdi-population
+title: "World Bank World Development Indicators: Population, total (SP.POP.TOTL), based on UN World Population Prospects"
+producer: United Nations Population Division (World Population Prospects), and national statistical offices
+distributor: World Bank, World Development Indicators (WDI)
+attribution: "UN WPP via World Bank WDI, CC BY 4.0"   # credited on every row
+url: https://data.worldbank.org/indicator/SP.POP.TOTL
+licence: CC-BY-4.0
+licence_note: Attribution to the World Bank and the UN Population Division is required. Check the licence shown on the indicator page before publishing.
+access:
+  type: worldbank                     # the pipeline downloads this indicator
+  countries: central_and_south_asia   # country group from aab/countries.csv
+  years:
+    start: 2000
+    end: 2030                         # wide range; the dataset selects the reference year
+  indicators:
+    - code: SP.POP.TOTL
+      name: Population, total (people)
+known_issues: []

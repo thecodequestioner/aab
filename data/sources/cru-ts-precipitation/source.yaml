@@ -1,0 +1,23 @@
+id: cru-ts-precipitation
+title: "CCKP country-average annual precipitation, CRU TS 4.10 (Afghanistan)"
+producer: Climatic Research Unit (CRU), University of East Anglia
+distributor: World Bank Climate Change Knowledge Portal (CCKP), Data Catalog API
+attribution: "The World Bank: CCKP annual precipitation for Afghanistan, 1901-2025; data source: Climatic Research Unit (CRU), University of East Anglia, CRU TS v4.10."
+url: "https://datacatalogapi.worldbank.org/ddhxext/v3/cckp/cru-x0.5_timeseries_pr_timeseries_annual_1901-2025_mean_historical_cru_ts4.10_mean/AFG?_format=json"
+licence: "CC-BY-4.0 under World Bank Dataset Terms (documented working determination)"
+licence_note: >-
+  This repository applies the World Bank's stated CC BY 4.0 default to this CCKP-distributed API
+  response, together with the World Bank Dataset Terms' mandatory additional conditions and
+  attribution requirements. The World Bank states that CCKP data is disseminated under its Open Data
+  policy and that CC BY 4.0 applies unless a dataset is specifically labeled otherwise. Its terms
+  also note that third-party data may have different terms. CRU's CRU TS 4.10 page separately states
+  ODbL terms for the dataset and Database Contents License terms for individual contents. This
+  record documents the repository's working interpretation for the CCKP API response; it is not
+  written confirmation from the World Bank or CRU. Revisit if CCKP metadata or written clarification
+  identifies a different license or third-party exception. See README.md for the terms links.
+access:
+  type: manual
+  api_url: "https://datacatalogapi.worldbank.org/ddhxext/v3/cckp/cru-x0.5_timeseries_pr_timeseries_annual_1901-2025_mean_historical_cru_ts4.10_mean/AFG?_format=json"
+  dataset_version: CRU TS 4.10
+  steps: README.md
+known_issues: []

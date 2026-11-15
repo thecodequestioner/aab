@@ -1,0 +1,16 @@
+# Copy this folder with: python -m aab new analysis SLUG
+id: TEMPLATE_ID                     # must equal the folder name
+title: Short title that states the subject and the period
+question: The question this analysis answers, in one sentence.
+version: 0.1.0
+status: draft
+themes: [water-access]              # must be listed in project.yaml
+
+inputs:
+  datasets: [DATASET_ID]            # every dataset read, including by analysis.py
+
+method: ranking                     # ranking | trend | custom
+parameters:
+  dataset: DATASET_ID
+  indicator: INDICATOR_CODE
+# For method: custom, add analysis.py with run(ctx) -> Result and remove parameters.

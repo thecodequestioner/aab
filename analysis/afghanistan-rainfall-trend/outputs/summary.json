@@ -1,0 +1,28 @@
+{
+  "method": "trend",
+  "dataset": "afghanistan-precipitation",
+  "indicator": "PR_ANNUAL_MM",
+  "unit": "mm per year",
+  "first_year": 1901,
+  "last_year": 2025,
+  "n_years": 125,
+  "direction": "increasing",
+  "sen_slope_per_decade": 2.552,
+  "ci95_per_decade": [
+    0.477,
+    4.635
+  ],
+  "mann_kendall_s": 1090.0,
+  "mann_kendall_z": 2.324,
+  "p_value": 0.0201,
+  "significant_5pct": true,
+  "mean": 324.44,
+  "wettest": {
+    "year": 1957,
+    "value": 443.9
+  },
+  "driest": {
+    "year": 1917,
+    "value": 198.0
+  }
+}

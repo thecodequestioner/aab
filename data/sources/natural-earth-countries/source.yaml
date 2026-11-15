@@ -1,0 +1,15 @@
+# A source is one provider's data, kept unchanged in this folder.
+id: natural-earth-countries
+title: "Natural Earth Admin 0 country boundaries, 1:50m and 1:110m GeoJSON"
+producer: Natural Earth
+distributor: Natural Earth vector repository on GitHub (nvkelso/natural-earth-vector)
+attribution: "Natural Earth, public domain"
+url: https://www.naturalearthdata.com/
+licence: Public domain
+licence_note: Natural Earth data is in the public domain. Credit is appreciated but not required.
+access:
+  type: manual
+  steps: README.md
+known_issues:
+  - The 1:110m file does not include Maldives. The 1:50m file includes it, but the island chain may still be too small to see clearly at regional-map scale.
+  - Boundaries are generalized cartographic references. Natural Earth depicts de facto boundaries and is not an authority on disputed borders.

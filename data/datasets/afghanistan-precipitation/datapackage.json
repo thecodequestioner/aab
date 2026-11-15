@@ -1,0 +1,135 @@
+{
+  "name": "afghanistan-precipitation",
+  "title": "Annual precipitation in Afghanistan, 1901-2025",
+  "description": "Country-average annual precipitation for Afghanistan from the CCKP CRU TS 4.10 historical series, 1901-2025. Reuse terms for this exact API response remain under review.",
+  "version": "0.1.0",
+  "keywords": [
+    "climate",
+    "precipitation",
+    "rainfall",
+    "afghanistan",
+    "cru"
+  ],
+  "contributors": [
+    {
+      "title": "The{code}questioner",
+      "role": "author"
+    }
+  ],
+  "sources": [
+    {
+      "title": "CCKP country-average annual precipitation, CRU TS 4.10 (Afghanistan)",
+      "path": "https://datacatalogapi.worldbank.org/ddhxext/v3/cckp/cru-x0.5_timeseries_pr_timeseries_annual_1901-2025_mean_historical_cru_ts4.10_mean/AFG?_format=json"
+    }
+  ],
+  "resources": [
+    {
+      "name": "afghanistan-precipitation",
+      "title": "Annual precipitation in Afghanistan, 1901-2025",
+      "path": "afghanistan-precipitation.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "iso3",
+            "type": "string",
+            "title": "ISO 3166-1 alpha-3 country code",
+            "description": "Three-letter country code. Matches the project registry in aab/countries.csv.",
+            "constraints": {
+              "required": true,
+              "pattern": "^[A-Z]{3}$"
+            }
+          },
+          {
+            "name": "country_name",
+            "type": "string",
+            "title": "Country name",
+            "description": "Short English country name from the project registry.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "title": "Sub-region",
+            "description": "Project sub-region: Central Asia or South Asia.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "title": "Reference year",
+            "description": "Calendar year the value refers to.",
+            "constraints": {
+              "required": true,
+              "minimum": 1900,
+              "maximum": 2100
+            }
+          },
+          {
+            "name": "indicator_code",
+            "type": "string",
+            "title": "Indicator code",
+            "description": "Code of the indicator as published by the source, or a project code where the source has none.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "indicator_name",
+            "type": "string",
+            "title": "Indicator name",
+            "description": "Plain-language name of the indicator.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "title": "Observed value",
+            "description": "Value in the unit given in the unit column. Missing values are not stored as rows.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "title": "Unit of measure",
+            "description": "Unit of the value, for example 'percent of population' or 'mm per year'.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "attribution",
+            "type": "string",
+            "title": "Attribution",
+            "description": "How to credit the source of this row. Source details are in the source's source.yaml.",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "primaryKey": [
+          "iso3",
+          "year",
+          "indicator_code"
+        ]
+      }
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}

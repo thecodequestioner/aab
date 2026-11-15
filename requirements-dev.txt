@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=7.0
+scipy>=1.10
+frictionless>=5.0

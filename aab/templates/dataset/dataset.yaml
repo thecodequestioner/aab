@@ -1,0 +1,32 @@
+# Copy this folder with: python -m aab new dataset SLUG
+id: TEMPLATE_ID                     # must equal the folder name
+title: Short descriptive title
+description: One or two sentences on coverage, method and source.
+version: 0.1.0
+status: draft
+themes: [water-access]              # must be listed in project.yaml
+tags: [water]
+
+inputs:
+  sources: [SOURCE_ID]              # folders in data/sources/
+
+coverage:
+  countries: central_and_south_asia # a group from aab/countries.csv
+  years:
+    start: 2000
+    end: 2024
+
+indicators:
+  - code: SOURCE.INDICATOR.CODE
+    name: Indicator name (unit)
+    unit: percent of population
+    decimals: 2
+    source: SOURCE_ID
+    # sdg: "6.1.1"                  # optional SDG indicator reference
+
+# extra_fields:                     # optional columns beyond the standard ones
+#   - name: note
+#     type: string
+#     title: Note
+#     description: What the column means
+#     constraints: {required: false}

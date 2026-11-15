@@ -1,0 +1,22 @@
+# A source is one provider's data, kept unchanged in this folder. Datasets point to sources by id.
+id: jmp-household-water
+title: "WHO/UNICEF Joint Monitoring Programme (JMP): household estimates of water, sanitation and hygiene, 2025 update"
+producer: WHO and UNICEF, Joint Monitoring Programme for Water Supply, Sanitation and Hygiene
+distributor: World Bank, World Development Indicators (WDI)
+attribution: "WHO/UNICEF JMP (2025 update) via World Bank WDI, CC BY 4.0"   # credited on every row
+url: https://washdata.org/
+distribution_url: https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS
+licence: CC-BY-4.0
+licence_note: Attribution to JMP and the World Bank is required.
+access:
+  type: worldbank                     # the pipeline downloads these indicators
+  countries: central_and_south_asia   # country group from aab/countries.csv
+  years:
+    start: 2000
+    end: 2024
+  indicators:
+    - code: SH.H2O.SMDW.ZS
+      name: People using safely managed drinking water services (% of population)
+    - code: SH.H2O.BASW.ZS
+      name: People using at least basic drinking water services (% of population)
+known_issues: []

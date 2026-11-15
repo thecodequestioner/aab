@@ -1,0 +1,2 @@
+retrieved_utc,file,source_url,sha256,bytes,note
+2026-11-14T19:41:45Z,cckp_cru_pr_annual_AFG.json,https://datacatalogapi.worldbank.org/ddhxext/v3/cckp/cru-x0.5_timeseries_pr_timeseries_annual_1901-2025_mean_historical_cru_ts4.10_mean/AFG?_format=json,391091d43d14384c8ee50ed5e376537d081d451303e7da3161cae646ef0d245e,2189,Response supplied during review; original API request timestamp not available.

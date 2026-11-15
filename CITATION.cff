@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below, and cite the original data source named in each source's README."
+title: "aab: water data, analysis and infographics for Central and South Asia"
+version: 0.1.0
+type: software
+license: MIT
+authors:
+  - name: "The{code}questioner"
+repository-code: "https://github.com/thecodequestioner/aab"
+keywords:
+  - water
+  - drinking water
+  - sanitation
+  - precipitation
+  - SDG 6
+  - Central Asia
+  - South Asia
+  - open data

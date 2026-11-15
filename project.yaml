@@ -1,0 +1,26 @@
+# Project-wide settings. Edit once; every item inherits them.
+name: aab
+title: "Water in Central and South Asia: open data, analyses and infographics"
+version: 0.1.0
+author: "The{code}questioner"
+repository_url: https://github.com/thecodequestioner/aab
+
+licences:
+  code:
+    name: MIT
+    title: MIT License
+    path: https://spdx.org/licenses/MIT.html
+  data:
+    name: CC-BY-4.0
+    title: Creative Commons Attribution 4.0 International
+    path: https://creativecommons.org/licenses/by/4.0/
+
+# Themes group items across the catalogue. Add a theme here before using it.
+themes:
+  - water-access        # drinking water, sanitation (SDG 6.1, 6.2)
+  - sanitation
+  - water-resources     # availability, withdrawals, stress (SDG 6.4)
+  - climate             # rainfall, temperature
+  - data-quality        # comparing releases, missing values
+  - equity              # differences between groups of people or places
+  - population          # population counts and projections

@@ -1,0 +1,30 @@
+# Dataset configuration. Read docs/guide.md for every field.
+id: drinking-water-access           # must equal the folder name
+title: Drinking water access in Central and South Asia, 2000-2024
+description: National estimates of safely managed and basic drinking water services for 13 countries in Central and South Asia, from the WHO/UNICEF Joint Monitoring Programme.
+version: 0.1.0                      # semantic versioning for data releases
+status: published                       # draft | published
+themes: [water-access]              # must be listed in project.yaml
+tags: [water, drinking-water, sdg-6, wash, central-asia, south-asia]
+
+inputs:
+  sources: [jmp-household-water]    # ids of folders in data/sources/
+
+coverage:
+  countries: central_and_south_asia # country group from aab/countries.csv
+  years:
+    start: 2000
+    end: 2024
+
+indicators:
+  - code: SH.H2O.SMDW.ZS
+    name: People using safely managed drinking water services (% of population)
+    unit: percent of population
+    decimals: 2
+    sdg: "6.1.1"
+    source: jmp-household-water
+  - code: SH.H2O.BASW.ZS
+    name: People using at least basic drinking water services (% of population)
+    unit: percent of population
+    decimals: 2
+    source: jmp-household-water
