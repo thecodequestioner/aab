@@ -2,7 +2,7 @@
 
 ![Map of 13 countries in Central and South Asia, shaded from dark to light by 2025 population. India, Pakistan and Bangladesh are darkest. A side panel lists each country's population in millions.](outputs/infographic_en.png)
 
-**Infographic:** `outputs/infographic_en.png`  
+**Infographic:** [PNG](outputs/infographic_en.png) and [SVG](outputs/infographic_en.svg)
 **Built from:** the analysis `population-ranking-2025` and the dataset `population-central-south-asia`, plus Natural Earth country-boundary geometry for the map shapes.
 
 ## Learning objective

@@ -210,6 +210,12 @@ def main():
     out = info.png("en")
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=100, facecolor=fig.get_facecolor())
+    fig.savefig(
+        info.svg("en"),
+        format="svg",
+        metadata={"Date": None},
+        facecolor=fig.get_facecolor(),
+    )
     plt.close(fig)
     print(f"Wrote {out.relative_to(ROOT).as_posix()}")
 

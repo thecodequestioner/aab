@@ -2,7 +2,7 @@
 
 ![Regional map of Central and South Asia highlighting 13 countries in blue and orange by sub-region. Their names are listed in a side panel. A northwest callout marks the Maldives location; the marker is not its border or island shape.](outputs/infographic_en.png)
 
-**Infographic:** `outputs/infographic_en.png`  
+**Infographic:** [PNG](outputs/infographic_en.png) and [SVG](outputs/infographic_en.svg) 
 **Built from:** the population dataset named in `infographic.yaml`, plus Natural Earth country-boundary geometry for the map shapes.
 
 ## Learning objective

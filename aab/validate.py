@@ -7,7 +7,7 @@ What is checked
   datasets    tidy-format rules (types, patterns, ranges, primary key, units, years);
               coverage per indicator; datapackage.json and CSV current; README sections present
   analyses    inputs exist; outputs exist and are current; every figure has alt text
-  infographics inputs exist; PNG exists at slide size; alt text present; notes present
+  infographics inputs exist; PNG and SVG exist; PNG is at slide size; alt text and notes are present
   catalogue   CATALOG.md is current
 """
 import json
@@ -252,6 +252,12 @@ def check_infographic(report: Report, info, analyses: dict, datasets: dict, proj
         with Image.open(png) as im:
             if im.size != (1920, 1080):
                 report.warn(where, f"PNG is {im.size[0]}x{im.size[1]}; slides are 1920x1080")
+    svg = info.svg("en")
+    if not svg.exists():
+        report.error(
+            where,
+            f"{rel(svg)} is missing. Run: python -m aab build --infographic {info.id}",
+        )
 
 
 def run(strict_catalog: bool = True) -> Report:

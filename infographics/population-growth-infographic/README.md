@@ -2,7 +2,7 @@
 
 ![All 13 countries grew in population from 2000 to 2025. Afghanistan rose most, by about 118 percent, and Sri Lanka changed least, at about 13 percent.](outputs/infographic_en.png)
 
-**Infographic:** `outputs/infographic_en.png`
+**Infographic:** [PNG](outputs/infographic_en.png) and [SVG](outputs/infographic_en.svg)
 **Built from:** the analysis `population-growth-2000-2025` and the dataset `population-central-south-asia`, as named in `infographic.yaml`.
 
 ## Learning objective

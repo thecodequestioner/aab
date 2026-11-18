@@ -4,6 +4,8 @@ This infographic summarizes the full available annual precipitation record for A
 
 ![Infographic showing annual country-average precipitation in Afghanistan from 1901 to 2025, a 10-year rolling mean, the full-period Sen's trend line, and the wettest and driest years.](outputs/infographic_en.png)
 
+**Infographic files:** [PNG](outputs/infographic_en.png) and [SVG](outputs/infographic_en.svg)
+
 ## Main finding
 
 Sen's slope is about **+2.55 mm per decade** (95% interval: +0.48 to +4.64). The conventional Mann-Kendall test gives p = 0.020. This suggests an upward trend over the full record, but the statistical result is exploratory: the test does not adjust for serial correlation, and data quality varies over time.
