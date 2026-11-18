@@ -1,8 +1,8 @@
-"""Draws the population growth infographic (1920 x 1080 px PNG).
+"""Draws the population growth infographic (1920 x 1080 px PNG and SVG).
 
 Reads   the dataset population-central-south-asia (values for 2000 and 2025) and the analysis
         summary population-growth-2000-2025, so the picture matches the analysis.
-Writes  outputs/infographic_en.png
+Writes  outputs/infographic_en.png and outputs/infographic_en.svg
 
 Run by the pipeline, or from the repository root:
     python infographics/population-growth-infographic/make.py
@@ -87,6 +87,7 @@ def main() -> None:
     out = info.png("en")
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=100)
+    fig.savefig(info.svg("en"), format="svg", metadata={"Date": None})
     print(f"wrote {out.relative_to(HERE.parents[1]).as_posix()}")
 
 

@@ -1,8 +1,8 @@
-"""Draws the teaching infographic (1920 x 1080 px PNG) for the Afghanistan rainfall analysis.
+"""Draws the teaching infographic (1920 x 1080 px PNG and SVG) for the Afghanistan rainfall analysis.
 
 Reads   the processed dataset (afghanistan-precipitation) and the analysis summary
         (afghanistan-rainfall-trend), so the picture always matches the data.
-Writes  outputs/infographic_en.png
+Writes  outputs/infographic_en.png and outputs/infographic_en.svg
 
 Run by the pipeline, or from the repository root:
     python infographics/afghanistan-rainfall-trend/make.py
@@ -90,6 +90,7 @@ def main() -> None:
     out = info.png("en")
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=100)
+    fig.savefig(info.svg("en"), format="svg", metadata={"Date": None})
     print(f"wrote {out.relative_to(HERE.parents[1]).as_posix()}")
 
 

@@ -1,4 +1,4 @@
-"""Draws the infographic PNG (1920 x 1080 px). Copy and adapt; keep the claim check.
+"""Draws the infographic PNG (1920 x 1080 px) and SVG. Copy and adapt; keep the claim check.
 
 Run by the pipeline, or from the repository root:
     python infographics/TEMPLATE_ID/make.py
@@ -30,6 +30,7 @@ def main() -> None:
     out = info.png("en")
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=100)
+    fig.savefig(info.svg("en"), format="svg", metadata={"Date": None})
 
 
 if __name__ == "__main__":

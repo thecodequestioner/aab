@@ -55,7 +55,7 @@ The repository keeps sources, datasets, analyses, and infographics separate beca
 | `<id>.csv` | Pipeline (dataset build) | No |
 | `datapackage.json` | Pipeline | No |
 | `analysis/<id>/outputs/*` | Pipeline (analysis run) | No |
-| `infographics/<id>/outputs/*.png` | Pipeline (`make.py`) | No |
+| `infographics/<id>/outputs/infographic_<lang>.png` and `.svg` | Pipeline (`make.py`) | No |
 | `CATALOG.md` | Pipeline | No |
 | Item READMEs and descriptors | Contributors | Yes |
 
@@ -199,7 +199,7 @@ An infographic gives one answer to one audience. Build it from an analysis where
 2. **Create the folder:** `python -m aab new infographic SLUG`.
 3. **Edit `infographics/SLUG/infographic.yaml`.** Write the question, one-sentence headline, audience, alt text, and inputs. Alt text must state the finding in plain language and be at least twelve words.
 4. **Set `claim`** to `no_clear_trend` or `trend_found`. The build checks the claim against the analysis summary.
-5. **Edit `make.py`.** Draw from the dataset and `read_summary(...)`, not from manually typed results. Save the output to `outputs/infographic_en.png` at 1920 × 1080 pixels.
+5. **Edit `make.py`.** Draw from the dataset and `read_summary(...)`, not from manually typed results. Save both `outputs/infographic_en.png` (1920 × 1080 pixels) and `outputs/infographic_en.svg`.
 6. **Write `README.md`.** Include the purpose, what the chart shows, questions for discussion, common misunderstandings, caveats, alt text, licence information, and credit.
 7. **Build it:** `python -m aab build --infographic SLUG`.
 8. **Run the pre-publication checklist** in [accessibility](accessibility.md#4-pre-publication-checklist).
@@ -227,14 +227,14 @@ An infographic communicates one answer to one audience. It should state its clai
 ```text
 infographics/<slug>/
   infographic.yaml   question, headline, claim, audience, languages, alt text, inputs
-  make.py            draws outputs/infographic_<lang>.png at 1920 × 1080 pixels
+  make.py            draws PNG and SVG outputs; the PNG is 1920 × 1080 pixels
   README.md          purpose, questions, caveats, alt text, licence and credit
   outputs/           generated images
 ```
 
 ### Languages
 
-English is the initial language. To add a translation, create `infographic_<lang>.png` and list the language in `languages`. Dari and Pashto use Arabic script and need right-to-left handling. See [accessibility, section 5](accessibility.md#5-languages-and-right-to-left-text) before translating.
+English is the initial language. For each language being built, create both `infographic_<lang>.png` and `infographic_<lang>.svg`, and list the language in `languages`. Dari and Pashto use Arabic script and need right-to-left handling. See [accessibility, section 5](accessibility.md#5-languages-and-right-to-left-text) before translating.
 
 ### Licence
 

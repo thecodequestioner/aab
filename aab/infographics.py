@@ -1,7 +1,8 @@
 """Infographics: communication products built from datasets and analyses.
 
 Each infographic has infographic.yaml (question, headline, audience, alt text, inputs)
-and make.py, which draws outputs/infographic_<lang>.png. The claim in infographic.yaml is
+and make.py, which writes both outputs/infographic_<lang>.png and
+outputs/infographic_<lang>.svg. The claim in infographic.yaml is
 checked against the analysis summary by that make.py, so the picture cannot state a result the
 analysis does not show. The generic pipeline does not yet read the claim field itself.
 """
@@ -47,6 +48,9 @@ class Infographic:
 
     def png(self, lang: str = "en") -> Path:
         return self.outputs / f"infographic_{lang}.png"
+
+    def svg(self, lang: str = "en") -> Path:
+        return self.outputs / f"infographic_{lang}.svg"
 
 
 def load_infographic(path: Path) -> Infographic:
